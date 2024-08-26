@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodicador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="decod.js"> </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/imagens/Vector.png" alt="Logo da Alura" >
+        </div>
+        
+
+    </header>
+    <main>
+            
+            <div class="criptografia">
+                <textarea wrap="hard" id="textoDigitado" placeholder="Digite seu texto"></textarea>
+                <p id="aviso"><img src="imagens/Group.png" alt="de exclamação">Apenas letras minúsculas e sem acento!</p>
+                <div class="botoes">
+                    <button class="botao-criptografia " onclick="codificarTexto()">Criptografar</button>
+                    <button class="botao-descriptografia" onclick="decodificarTexto()">Descriptografar</button>
+                </div>
+            </div>
+            <div class="resultado">
+                <div class="sem-resultado" id="semResultado">
+                    <img id="busca" src="/imagens/High quality products 1 1.jpg">
+                    <h1 class="texto__primeiro">Nenhuma mensagem encontrada</h1>
+                    <p class="texto__segundo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="com-resultado" id="comResultado">
+                    <textarea wrap="hard" id="textoApresentar" readonly class="texto-resultado"></textarea>
+                    <button class="botao-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+            
+    </main>  
+    <footer>Desenvolvido por: Maiara Mendes</footer>
+</body>
+</html>
